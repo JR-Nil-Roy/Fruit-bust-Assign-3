@@ -52,6 +52,9 @@
             background-position: center;
 
         }
+        .bb{
+            border-bottom: 2px solid rgba(0, 0, 0, 0.692);
+        }
     </style>
 
 </head>
@@ -60,28 +63,28 @@
     <header class="lg:px-24 pt-3 lg:pb-5 bg-white container rounded-lg mx-auto">
         <div class=" ">
             <div
-                class="navbar justify-center lg:justify-between lg:bg-red-600 lg:rounded-full xl:px-10 lg:text-white text-black bg-white mb-5">
+                class="navbar justify-center lg:justify-between lg:bg-red-600 lg:rounded-full xl:px-10 lg:text-white text-black bg-white lg:mb-5">
 
-                <div class="navbar-start hidden lg:flex">
+                <div class=" hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
-                        <li><a href="#team">About Us</a></li>
-                        <li><a href="#Shop">Shop</a></li>
-                        <li><a>All Fruits</a></li>
+                        <li><a class="text-lg">Home</a></li>
+                        <li><a class="text-lg" href="#team">About Us</a></li>
+                        <li><a class="text-lg" href="#Shop">Shop</a></li>
+                        <li><a class="text-lg">All Fruits</a></li>
                     </ul>
                 </div>
                 <div class="">
                     <img src="./images/logo.png" alt="" class="">
-                    <h1 class="lg:text-3xl text-2xl font-semibold">FruitBrust</h1>
+                    <h1 class="lg:text-xl xl:text-3xl text-2xl font-semibold">FruitBrust</h1>
                 </div>
-                <div class="navbar-end hidden lg:flex">
-                    <input type="text" placeholder="Search here"
-                        class="input input-bordered bg-white xl:w-full max-w-xs mr-2" />
-                    <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                <div class="navbar-end w-60 pr-2 bg-white rounded-full hidden lg:flex">
+                    <input type="text" placeholder="Search here "
+                        class="input to-slate-900 rounded-full bg-white xl:w-full max-w-xs mr-2" />
+                    <button type="submit"><svg  xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24"
                             stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
+                            <path stroke-linecap="round" stroke-linejoin="round" class="text-black"
                                 d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                        </svg>
+                        </svg >
                     </button>
                 </div>
                 <div class="navbar-end lg:hidden">
@@ -563,9 +566,10 @@
 
             </div>
         </section>
+        
     </main>
-    <footer class="lg:px-20 py-32">
-        <div class="flex justify-center gap-8 flex-col">
+    <footer class="lg:px-20 bg-slate-900 py-32">
+        <div class="flex justify-center  gap-8 flex-col">
             <div class="flex justify-center items-center gap-2">
                 <img src="./images/logo.png" alt="">
                 <h1 class="lg:text-3xl text-2xl font-semibold">FruitBrust</h1>
