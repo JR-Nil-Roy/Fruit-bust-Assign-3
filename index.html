@@ -8,22 +8,34 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        #slide1{
+        #slide1 {
             background-image: url(./images/banner1.png);
-            
+
 
         }
-        #slide2{
+
+        #slide2 {
             background-image: url(./images/banner2.png);
         }
-        #slide3{
+
+        #slide3 {
             background-image: url(./images/banner3.png);
         }
-        #slide4{
+
+        #slide4 {
             background-image: url(./images/banner4.png);
         }
-        .bg-overlay{
+
+        .bg-overlay {
             background-color: rgba(0, 0, 0, 0.434);
+        }
+
+        .mm-12 {
+            margin-bottom: 12px;
+        }
+        .mid-bg{
+            background-image: url(./images/banner1.png);
+            
         }
     </style>
 
@@ -32,8 +44,9 @@
 <body>
     <header class="lg:px-20 pt-3 lg:pb-5 bg-white container mx-auto">
         <div class="">
-            <div class="navbar justify-center lg:justify-between lg:bg-red-600 lg:rounded-full xl:px-10 lg:text-white text-black bg-white mb-5">
-                
+            <div
+                class="navbar justify-center lg:justify-between lg:bg-red-600 lg:rounded-full xl:px-10 lg:text-white text-black bg-white mb-5">
+
                 <div class="navbar-start hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a>Home</a></li>
@@ -47,11 +60,14 @@
                     <h1 class="lg:text-3xl text-2xl font-semibold">FruitBrust</h1>
                 </div>
                 <div class="navbar-end hidden lg:flex">
-                    <input type="text" placeholder="Search here" class="input input-bordered bg-white xl:w-full max-w-xs mr-2"  />
-                    <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                      </svg>
-                      </button>
+                    <input type="text" placeholder="Search here"
+                        class="input input-bordered bg-white xl:w-full max-w-xs mr-2" />
+                    <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                    </button>
                 </div>
                 <div class="navbar-end lg:hidden">
                     <div class="dropdown absolute">
@@ -75,69 +91,236 @@
             </div>
             <div class="carousel  h-48 md:h-56 lg:h-[550px] w-full">
                 <div id="slide1" class="carousel-item relative bg-cover w-full">
-                  <div class="flex justify-center items-center flex-col gap-3 text-center w-full bg-overlay">
-                    <h1 class="lg:text-7xl text-2xl text-white">Exotic tastes at your
-                        <br>
-                        doorstep</h1>
-                    <p class="lg:text-lg text-sm text-white">We supply highly quality organic products</p>
-                    <button class="btn bg-red-600 border-none uppercase text-white sm:btn-sm md:btn-md lg:btn-lg">Shop Now</button>
-                  </div>
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
+                    <div class="flex justify-center items-center flex-col gap-3 text-center w-full bg-overlay">
+                        <h1 class="lg:text-7xl text-2xl text-white">Exotic tastes at your
+                            <br>
+                            doorstep
+                        </h1>
+                        <p class="lg:text-lg text-sm text-white">We supply highly quality organic products</p>
+                        <button
+                            class="btn bg-red-600 border-none uppercase text-white sm:btn-sm md:btn-md lg:btn-lg">Shop
+                            Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
                 <div id="slide2" class="carousel-item relative w-full">
                     <div class="flex justify-center items-center flex-col gap-3 text-center w-full bg-overlay">
                         <h1 class="lg:text-7xl text-3xl text-white">Exotic tastes at your
                             <br>
-                            doorstep</h1>
+                            doorstep
+                        </h1>
                         <p class="lg:text-lg text-sm text-white">We supply highly quality organic products</p>
-                        <button class="btn bg-red-600 border-none uppercase text-white sm:btn-sm md:btn-md lg:btn-lg">Shop Now</button>
-                      </div>
+                        <button
+                            class="btn bg-red-600 border-none uppercase text-white sm:btn-sm md:btn-md lg:btn-lg">Shop
+                            Now</button>
+                    </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
                 <div id="slide3" class="carousel-item relative w-full">
                     <div class="flex justify-center items-center flex-col gap-3 text-center w-full bg-overlay">
                         <h1 class="lg:text-7xl text-3xl text-white">Exotic tastes at your
                             <br>
-                            doorstep</h1>
+                            doorstep
+                        </h1>
                         <p class="lg:text-lg text-sm text-white">We supply highly quality organic products</p>
-                        <button class="btn bg-red-600 border-none uppercase text-white sm:btn-sm md:btn-md lg:btn-lg">Shop Now</button>
-                      </div>
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
+                        <button
+                            class="btn bg-red-600 border-none uppercase text-white sm:btn-sm md:btn-md lg:btn-lg">Shop
+                            Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
                 <div id="slide4" class="carousel-item relative w-full">
                     <div class="flex justify-center items-center flex-col gap-3 text-center w-full bg-overlay">
                         <h1 class="lg:text-7xl text-3xl text-white">Exotic tastes at your
                             <br>
-                            doorstep</h1>
+                            doorstep
+                        </h1>
                         <p class="lg:text-lg text-sm text-white">We supply highly quality organic products</p>
-                        <button class="btn bg-red-600 border-none uppercase text-white sm:btn-sm md:btn-md lg:btn-lg">Shop Now</button>
-                      </div>
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
+                        <button
+                            class="btn bg-red-600 border-none uppercase text-white sm:btn-sm md:btn-md lg:btn-lg">Shop
+                            Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
                 </div>
-              </div>
+            </div>
         </div>
     </header>
-    <main class="lg:px-20 lg:py-28 pt-3 lg:pb-5 bg-white container mx-auto">
-        <section>
-            <div>
-                <div>
-                    <h2>Deal of the day</h2>
-                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical 
-                       <br>
-                       Latin literature from 45 BC, making it over 2000 years old.</p>
+    <main class="lg:px-20 lg:py-28 pt-3 lg:pb-5 bg-white container mx-auto text-black">
+        <section class="lg:mb-24">
+            <div class="flex items-center flex-col lg:justify-start lg:flex-row mm-12">
+                <div class="flex-1 text-center lg:text-left">
+                    <h2 class="lg:text-5xl text-2xl font-bold mb-3">Deal of the day</h2>
+                    <p class="to-slate-900 text-base ">Contrary to popular belief, is not simply random text. It has
+                        roots in a piece of classical
+                        <br>
+                        Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
                 </div>
+                <div class="">
+                    <div class="grid grid-flow-col gap-5 text-center ">
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            days
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:10;"></span>
+                            </span>
+                            hours
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:24;"></span>
+                            </span>
+                            min
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:44;"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lg:mb-24 py-6 flex flex-col justify-center items-center">
+            <div class="grid md:grid-cols-2 grid-flow-row justify-items-center lg:grid-cols-4 gap-6 lg:h-64 mb-6">
+                <div class="border-slate-400 border-2 flex flex-col items-center w-64 justify-between p-2">
+                    <img src="./images/fruit6.png" alt="" class="h-1/3 w-1/3">
+                    <p class="text-xl font-bold">12.00$-$18.00$</p>
+                    <div class="divider"></div>
+                    <p class="text-base mm-12">Appple</p>
+                    <div class="rating mm-12">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <p class="mm-12 text-red-500">Details</p>
+
+                </div>
+                <div class="border-slate-400 border-2 flex flex-col items-center w-64 justify-between p-2">
+                    <img src="./images/fruit6.png" alt="" class="h-1/3 w-1/3">
+                    <p class="text-xl font-bold">12.00$-$18.00$</p>
+                    <div class="divider"></div>
+                    <p class="text-base mm-12">Appple</p>
+                    <div class="rating mm-12">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <p class="mm-12 text-red-500">Details</p>
+
+                </div>
+                <div class="border-slate-400 border-2 flex flex-col items-center w-64 justify-between p-2">
+                    <img src="./images/fruit6.png" alt="" class="h-1/3 w-1/3">
+                    <p class="text-xl font-bold">12.00$-$18.00$</p>
+                    <div class="divider"></div>
+                    <p class="text-base mm-12">Appple</p>
+                    <div class="rating mm-12">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <p class="mm-12 text-red-500">Details</p>
+
+                </div>
+                <div class="border-slate-400 border-2 flex flex-col items-center w-64 justify-between p-2">
+                    <img src="./images/fruit6.png" alt="" class="h-1/3 w-1/3">
+                    <p class="text-xl font-bold">12.00$-$18.00$</p>
+                    <div class="divider"></div>
+                    <p class="text-base mm-12">Appple</p>
+                    <div class="rating mm-12">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <p class="mm-12 text-red-500">Details</p>
+
+                </div>
+
+
+            </div>
+            <div class="lg:mt-10">
+                <button class="btn bg-red-500 uppercase text-white text-center">Shop All</button>
+            </div>
+        </section>
+
+        <section>
+            <div class="mid-bg">
+                <div>
+                    <h2 class="text-5xl font-bold text-center mm-12">Meet the team section</h2>
+                    <p class="text-base text-center mm-12">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                        <br>
+                        Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div>
+                    <div>
+                        <img src="./images/member1.png" alt="">
+                        <h1>Awlad Hossain</h1>
+                        <p>Fruits Expert</p>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">! Font Awesome
+                                Free 6.4.0 by @fontawesome - https://fontawesome.com License -
+                                https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.
+                                <style>
+                                    svg {
+                                        fill: #e62200
+                                    }
+                                </style>
+                                <path
+                                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #cd0404
+                                    }
+                                </style>
+                                <path
+                                    d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #e00606
+                                    }
+                                </style>
+                                <path
+                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                            </svg>
+
+                        </div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
             </div>
         </section>
     </main>
@@ -145,4 +328,5 @@
 
     </footer>
 </body>
+
 </html>
