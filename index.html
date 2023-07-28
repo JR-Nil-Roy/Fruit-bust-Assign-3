@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get your fruits</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #slide1{
+            background-image: url(./images/banner1.png);
+            
+
+        }
+        #slide2{
+            background-image: url(./images/banner2.png);
+        }
+        #slide3{
+            background-image: url(./images/banner3.png);
+        }
+        #slide4{
+            background-image: url(./images/banner4.png);
+        }
+        .bg-overlay{
+            background-color: rgba(0, 0, 0, 0.434);
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="lg:px-20 pt-3 lg:pb-5 bg-white container mx-auto">
+        <div class="">
+            <div class="navbar justify-center lg:justify-between lg:bg-red-600 lg:rounded-full xl:px-10 lg:text-white text-black bg-white mb-5">
+                
+                <div class="navbar-start hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <img src="./images/logo.png" alt="" class="">
+                    <h1 class="lg:text-3xl text-2xl font-semibold">FruitBrust</h1>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                    <input type="text" placeholder="Search here" class="input input-bordered bg-white xl:w-full max-w-xs mr-2"  />
+                    <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>
+                      </button>
+                </div>
+                <div class="navbar-end lg:hidden">
+                    <div class="dropdown absolute">
+                        <label tabindex="0" class=" lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm text-center dropdown-content mt-3 z-[1] p-2 shadow bg-white cursor-pointer w-32 relative right-2">
+                            <li class="items-center"><a>Home</a></li>
+                            <li class="items-center"><a>About Us</a></li>
+                            <li class="items-center"><a>Shop</a></li>
+                            <li class="items-center"><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel  h-48 md:h-56 lg:h-[550px] w-full">
+                <div id="slide1" class="carousel-item relative bg-cover w-full">
+                  <div class="flex justify-center items-center flex-col gap-3 text-center w-full bg-overlay">
+                    <h1 class="lg:text-7xl text-2xl text-white">Exotic tastes at your
+                        <br>
+                        doorstep</h1>
+                    <p class="lg:text-lg text-sm text-white">We supply highly quality organic products</p>
+                    <button class="btn bg-red-600 border-none uppercase text-white sm:btn-sm md:btn-md lg:btn-lg">Shop Now</button>
+                  </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="flex justify-center items-center flex-col gap-3 text-center w-full bg-overlay">
+                        <h1 class="lg:text-7xl text-3xl text-white">Exotic tastes at your
+                            <br>
+                            doorstep</h1>
+                        <p class="lg:text-lg text-sm text-white">We supply highly quality organic products</p>
+                        <button class="btn bg-red-600 border-none uppercase text-white sm:btn-sm md:btn-md lg:btn-lg">Shop Now</button>
+                      </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="flex justify-center items-center flex-col gap-3 text-center w-full bg-overlay">
+                        <h1 class="lg:text-7xl text-3xl text-white">Exotic tastes at your
+                            <br>
+                            doorstep</h1>
+                        <p class="lg:text-lg text-sm text-white">We supply highly quality organic products</p>
+                        <button class="btn bg-red-600 border-none uppercase text-white sm:btn-sm md:btn-md lg:btn-lg">Shop Now</button>
+                      </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="flex justify-center items-center flex-col gap-3 text-center w-full bg-overlay">
+                        <h1 class="lg:text-7xl text-3xl text-white">Exotic tastes at your
+                            <br>
+                            doorstep</h1>
+                        <p class="lg:text-lg text-sm text-white">We supply highly quality organic products</p>
+                        <button class="btn bg-red-600 border-none uppercase text-white sm:btn-sm md:btn-md lg:btn-lg">Shop Now</button>
+                      </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </header>
+    <main class="lg:px-20 lg:py-28 pt-3 lg:pb-5 bg-white container mx-auto">
+        <section>
+            <div>
+                <div>
+                    <h2>Deal of the day</h2>
+                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical 
+                       <br>
+                       Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
